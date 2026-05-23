@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parth Raval - Aspiring Full Stack Python Developer | Portfolio showcasing skills in HTML, CSS, JavaScript, Python, and modern web technologies.">
+    <meta name="keywords" content="Parth Raval, Full Stack Developer, Python Developer, Web Developer, Portfolio">
+    <meta name="author" content="Parth Raval">
+    <title>Parth Raval | Full Stack Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Particle Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-ring"></div>
+            <div class="preloader-ring"></div>
+            <div class="preloader-ring"></div>
+            <span class="preloader-text">PR</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">PR</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-greeting reveal-up">Hello, I'm</span>
+                <span class="hero-name reveal-up" data-delay="200">Parth Raval</span>
+                <span class="hero-role reveal-up" data-delay="400">
+                    <span class="typing-wrapper">
+                        <span id="typed-text"></span>
+                        <span class="typing-cursor">|</span>
+                    </span>
+                </span>
+            </h1>
+            <p class="hero-description reveal-up" data-delay="600">
+                Motivated MCA student crafting responsive, modern web experiences 
+                with a passion for clean code and beautiful interfaces.
+            </p>
+            <div class="hero-cta reveal-up" data-delay="800">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+            <div class="hero-stats reveal-up" data-delay="1000">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span>
+                    <span class="stat-label">Months Internship</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">&lt;about&gt;</span>
+                <h2 class="section-title reveal-up">Get To Know Me</h2>
+                <div class="section-line reveal-up"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal-left">
+                    <div class="about-image-container">
+                        <div class="about-image-placeholder">
+                            <i class="fas fa-code"></i>
+                            <span>PR</span>
+                        </div>
+                        <div class="about-image-border"></div>
+                        <div class="about-image-dots"></div>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <h3 class="about-subtitle">
+                        Aspiring Full Stack Developer based in 
+                        <span class="highlight">Ahmedabad, Gujarat</span>
+                    </h3>
+                    <p class="about-text">
+                        I'm a motivated MCA student with a strong interest in both frontend and backend 
+                        web development. Skilled in <strong>HTML, CSS, JavaScript, Python, and MySQL</strong>, 
+                        I love building responsive web projects and exploring modern web technologies.
+                    </p>
+                    <p class="about-text">
+                        My journey includes a hands-on internship at <strong>InfoLabz</strong> where I gained 
+                        practical exposure to Python programming and data science concepts. I'm passionate about 
+                        continuous learning, problem-solving, and creating professional user experiences.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ahmedabad, Gujarat</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>MCA Student</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Open to Opportunities</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-language"></i>
+                            <span>English, Hindi, Gujarati</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary about-btn">
+                        <span>Let's Connect</span>
+                        <i class="fas fa-handshake"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">&lt;skills&gt;</span>
+                <h2 class="section-title reveal-up">Tech Arsenal</h2>
+                <div class="section-line reveal-up"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category reveal-up" data-delay="0">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-box">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-info">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="skill-info">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category reveal-up" data-delay="200">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-box backend">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress backend-bar" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="40">
+                            <div class="skill-info">
+                                <i class="fas fa-leaf"></i>
+                                <span>Django</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress backend-bar" data-width="40"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="55">
+                            <div class="skill-info">
+                                <i class="fab fa-php"></i>
+                                <span>PHP</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress backend-bar" data-width="55"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="70">
+                            <div class="skill-info">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress backend-bar" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Other -->
+                <div class="skill-category reveal-up" data-delay="400">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-box tools">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Other</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="75">
+                            <div class="skill-info">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git & GitHub</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress tools-bar" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <i class="fas fa-code"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress tools-bar" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="65">
+                            <div class="skill-info">
+                                <i class="fas fa-pencil-ruler"></i>
+                                <span>UI/UX Basics</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress tools-bar" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info">
+                                <i class="fas fa-globe"></i>
+                                <span>Web Development</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress tools-bar" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">&lt;experience&gt;</span>
+                <h2 class="section-title reveal-up">Work Experience</h2>
+                <div class="section-line reveal-up"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                Jun 2024 – Apr 2025
+                            </span>
+                            <span class="timeline-badge">Internship</span>
+                        </div>
+                        <h3 class="timeline-title">Data Science Intern</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            InfoLabz — Ahmedabad, Gujarat
+                        </h4>
+                        <ul class="timeline-details">
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Worked on learning-based projects and gained practical exposure to Python programming and data-related concepts.
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Improved problem-solving and technical skills through internship tasks and collaboration.
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Earned Data Science Internship Certificate upon completion.
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Science</span>
+                            <span class="tag">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">&lt;projects&gt;</span>
+                <h2 class="section-title reveal-up">Featured Projects</h2>
+                <div class="section-line reveal-up"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal-up" data-delay="0">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <div class="project-image-placeholder cosmetics">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" title="View Project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link-btn" title="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Frontend</span>
+                            <h3 class="project-title">Glow & Grace Cosmetics</h3>
+                            <p class="project-description">
+                                A responsive frontend cosmetics website with elegant UI, product showcasing, 
+                                and modern design aesthetics.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal-up" data-delay="200">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <div class="project-image-placeholder auth">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" title="View Project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link-btn" title="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Full Stack</span>
+                            <h3 class="project-title">Login & Registration System</h3>
+                            <p class="project-description">
+                                Secure authentication interface design with login, signup, and 
+                                form validation for web applications.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal-up" data-delay="400">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <div class="project-image-placeholder portfolio">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" title="View Project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link-btn" title="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Dev</span>
+                            <h3 class="project-title">Portfolio & Web Projects</h3>
+                            <p class="project-description">
+                                Collection of personal practice projects focused on responsive UI design 
+                                and modern web development techniques.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">&lt;education&gt;</span>
+                <h2 class="section-title reveal-up">Education</h2>
+                <div class="section-line reveal-up"></div>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card reveal-up" data-delay="0">
+                    <div class="edu-card-accent"></div>
+                    <div class="edu-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            Jun 2025 – Present
+                        </span>
+                        <h3 class="edu-degree">Master of Computer Applications (MCA)</h3>
+                        <h4 class="edu-school">Indus University, Ahmedabad</h4>
+                        <p class="edu-field">Information Technology</p>
+                        <span class="edu-status current">Currently Pursuing</span>
+                    </div>
+                </div>
+
+                <div class="edu-card reveal-up" data-delay="200">
+                    <div class="edu-card-accent bachelor"></div>
+                    <div class="edu-icon bachelor">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            Apr 2022 – Jun 2025
+                        </span>
+                        <h3 class="edu-degree">Bachelor's Degree in IT</h3>
+                        <h4 class="edu-school">Gujarat University</h4>
+                        <p class="edu-field">Information Technology</p>
+                        <span class="edu-status completed">Completed</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certification -->
+            <div class="cert-section reveal-up">
+                <h3 class="cert-title">
+                    <i class="fas fa-certificate"></i>
+                    Certifications
+                </h3>
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Data Science Internship Certificate</h4>
+                        <p>InfoLabz — 2025</p>
+                    </div>
+                    <div class="cert-verified">
+                        <i class="fas fa-check-circle"></i>
+                        Verified
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">&lt;contact&gt;</span>
+                <h2 class="section-title reveal-up">Let's Connect</h2>
+                <div class="section-line reveal-up"></div>
+                <p class="section-subtitle reveal-up">
+                    Have a project in mind or want to collaborate? Feel free to reach out!
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Email</h4>
+                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon location">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Location</h4>
+                            <span>Ahmedabad, Gujarat, India</span>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <h4>Find Me On</h4>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/raval-parth-58153a381/" target="_blank" class="social-link linkedin" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" target="_blank" class="social-link github" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="social-link twitter" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" target="_blank" class="social-link instagram" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <span class="input-border"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                <span class="input-border"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <i class="fas fa-tag"></i>
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                                <span class="input-border"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fas fa-comment-dots"></i>
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                                <span class="input-border"></span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,50 C360,100 720,0 1080,50 C1260,75 1380,60 1440,50 L1440,100 L0,100 Z" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">Parth Raval</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Designed & Built with <span class="heart">&hearts;</span> by Parth Raval
+                </p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/raval-parth-58153a381/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2025 Parth Raval. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
